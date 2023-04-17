@@ -1,0 +1,63 @@
+.header {
+    min-height: 1118px;
+    background-color: $yellow;
+    border-radius: 0 0 200px 200px;
+    &-container {
+        max-width: 1725px; // tính toán cộng thêm 2 bên 15px để chừa cho padding
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+    }
+    &-top {
+        padding-top: 60px;
+        padding-bottom: 83px;
+        display:flex;
+        align-items: center;
+    }
+    &-buttons {
+        margin-left: 80px;
+        display: flex;
+        align-items: center;
+        gap: 0 34px;
+    }
+    &-main {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 62px;
+    }
+
+    &-content {
+
+    }
+    &-heading {
+        color: $secondary-color;
+        font-size: 54px;
+        font-weight: bold;
+        margin-bottom: 34px;
+        line-height: calc(81 / 54);
+
+        span {
+            color: $primary-color;
+        }
+    }
+    &-desc {
+        font-size: 24px;
+        color: $gray-dark;
+        font-weight: 400;
+        line-height: calc(38.4 / 24);
+        margin-bottom: 52px;
+    }
+
+}
+
+.menu {
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0 80px;
+    &-link {
+        color: inherit;
+    }
+}

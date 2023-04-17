@@ -1,0 +1,9 @@
+@import 'reset';
+@import 'variable';
+@import 'global';
+@import 'header';
+h1 {
+    color: $primary-color;
+    font-size: 100px;
+    text-decoration: dashed;
+}

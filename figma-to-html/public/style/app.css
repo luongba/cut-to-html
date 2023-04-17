@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-size: 22px;
+  color: #252641;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 100rem;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  padding: 13px 50px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.btn--while {
+  background-color: white;
+  color: #6c6c6c;
+}
+.btn--primary {
+  background-color: #f48c06;
+  color: white;
+}
+
+.header {
+  min-height: 1118px;
+  background-color: #fff2e1;
+  border-radius: 0 0 200px 200px;
+}
+.header-container {
+  max-width: 1725px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.header-top {
+  padding-top: 60px;
+  padding-bottom: 83px;
+  display: flex;
+  align-items: center;
+}
+.header-buttons {
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  gap: 0 34px;
+}
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 62px;
+}
+.header-heading {
+  color: #f48c06;
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 34px;
+  line-height: 1.5;
+}
+.header-heading span {
+  color: #2f327d;
+}
+.header-desc {
+  font-size: 24px;
+  color: #464646;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 52px;
+}
+
+.menu {
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0 80px;
+}
+.menu-link {
+  color: inherit;
+}
+
+h1 {
+  color: #2f327d;
+  font-size: 100px;
+  text-decoration: dashed;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../src/scss/_reset.scss%22,%22../../src/scss/_global.scss%22,%22../../src/scss/_variable.scss%22,%22../../src/scss/_header.scss%22,%22../../src/scss/app.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAA;EACI;;;AAEF;EACE;EACA;;;AAEF;AAAA;AAAA;EAGE;;;AAEF;AAAA;AAAA;AAAA;EAIE;;;AAEF;EACE;;;AAEF;AAAA;EAEE;;;AAEF;EACE;;;AAEF;EACE;EACA;;;AC9BJ;EACI;EACA,OCIU;EDHV;EACA;EACA,aCKW;;;ADFf;EACI;EACA;EACA;EACA;EACA,aCHW;EDIX;EACA;EACA;EACA;EACA;;AAGA;EACI;EACA,OCnBK;;ADqBT;EACI,kBCzBU;ED0BV;;;AE3BR;EACI;EACA,kBDMK;ECLL;;AACA;EACI;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;EACA;;AAMJ;EACI,ODhCU;ECiCV;EACA;EACA;EACA;;AAEA;EACI,ODxCI;;AC2CZ;EACI;EACA,ODxCI;ECyCJ;EACA;EACA;;;AAKR;EACI;EACA;EACA;EACA;EACA;;AACA;EACI;;;ACxDR;EACI,OFLY;EEMZ;EACA%22,%22file%22:%22app.css%22%7D */

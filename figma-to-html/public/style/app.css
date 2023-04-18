@@ -67,10 +67,40 @@ body {
   color: white;
 }
 
+.global-heading {
+  color: #2f327d;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.global-heading span {
+  color: #f48c06;
+}
+.global-text {
+  color: #696984;
+  font-size: 24px;
+  line-height: 1.8;
+}
+
+.bg-purple {
+  background: #5b72ee;
+}
+
+.bg-secondary {
+  background: #f48c06;
+}
+
+.bg-blue {
+  background: #29b9e7;
+}
+
 .header {
-  min-height: 1118px;
   background-color: #fff2e1;
-  border-radius: 0 0 200px 200px;
+  clip-path: ellipse(100% 100% at top);
+  margin-bottom: 100px;
+  overflow: hidden;
+  min-height: 1118px;
 }
 .header-container {
   max-width: 1725px;
@@ -96,6 +126,13 @@ body {
   align-items: center;
   gap: 0 62px;
 }
+.header-content {
+  position: relative;
+}
+.header-image {
+  position: relative;
+  transform: translateY(24px);
+}
 .header-heading {
   color: #f48c06;
   font-size: 54px;
@@ -113,6 +150,33 @@ body {
   line-height: 1.6;
   margin-bottom: 52px;
 }
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+}
+.header-actions .btn--primary {
+  padding: 22px 38px;
+}
+
+.watch {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  gap: 0 32px;
+  line-height: 1.5;
+  color: inherit;
+}
+.watch-icon {
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  box-shadow: 2px 20px 60px rgba(61, 155, 185, 0.1);
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .menu {
   margin-left: auto;
@@ -125,10 +189,291 @@ body {
   color: inherit;
 }
 
+.company {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 163px;
+}
+.company-heading {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.8666666667;
+  color: #696984;
+  letter-spacing: 2%;
+  margin-bottom: 32px;
+}
+.company-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 75px;
+  max-width: 1370px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.company-logo img {
+  margin: 0 auto;
+}
+
+.introduce {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  margin-bottom: 158px;
+}
+.introduce-header {
+  max-width: 870px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  text-align: center;
+}
+.introduce-desc {
+  margin-bottom: 160px;
+}
+.introduce-list {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0 60px;
+}
+.introduce-item {
+  background-color: white;
+  border-radius: 20px;
+  padding: 0 54px 50px;
+  position: relative;
+  box-shadow: 0 10px 60px rgba(38, 45, 118, 0.08);
+  min-height: 430px;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+}
+.introduce-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 100rem;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.introduce-title {
+  color: #2f327d;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 30px;
+  margin-top: 122px;
+  margin-bottom: 24px;
+}
+.introduce-description {
+  color: #696984;
+  font-size: 20px;
+  line-height: 1.8;
+  margin-top: auto;
+}
+
+.about {
+  max-width: 1330px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 160px;
+}
+.about-header {
+  max-width: 1130px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.about-list {
+  display: flex;
+  align-items: center;
+  gap: 0 100px;
+}
+.about-item {
+  border-radius: 20px;
+  position: relative;
+}
+.about-content {
+  position: absolute;
+  inset: 0;
+  background: rgba(23, 27, 65, 0.5);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-title {
+  font-weight: 600px;
+  line-height: 1.5;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  margin-bottom: 17px;
+}
+.about .btn--outline {
+  padding: 24px 38px;
+  border: 1px solid currentColor;
+  color: white;
+}
+.about .btn--student {
+  padding: 24px 38px;
+  background-color: rgba(35, 189, 238, 0.9);
+  color: white;
+}
+
+.youcan {
+  max-width: 1577px;
+  padding: 0 15px;
+  margin: 0 auto 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 67px;
+}
+.youcan > * {
+  width: 50%;
+}
+.youcan-content {
+  position: relative;
+}
+.youcan-content-decoration {
+  border-radius: 100rem;
+  position: absolute;
+  z-index: -1;
+  background-color: #f48c06;
+}
+.youcan-content-decoration.rounder-big {
+  width: 73px;
+  height: 73px;
+  transform: translate(-25px, -13px);
+}
+.youcan-content-decoration.rounder-small {
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  right: 0%;
+  transform: translateY(50%);
+}
+.youcan-heading {
+  font-size: 36px;
+  line-height: 1.6;
+  font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
+}
+.youcan-desc {
+  margin: 30px 0;
+  letter-spacing: 0.02rem;
+}
+.youcan-link {
+  text-decoration-line: underline;
+  color: #696984;
+  line-height: 1.8;
+}
+.youcan-image {
+  position: relative;
+}
+.youcan-image > img {
+  width: 100%;
+}
+.youcan-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100rem;
+  cursor: pointer;
+}
+.youcan-decoration {
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+}
+.youcan-decoration.blue {
+  width: 138px;
+  height: 138px;
+  background-color: #29b9e7;
+  transform: translate(-20px, -20px);
+}
+.youcan-decoration.secondary {
+  width: 231px;
+  height: 231px;
+  right: 0;
+  bottom: 0;
+  background-color: #f48c06;
+  transform: translate(20px, 20px);
+}
+
+.feature {
+  max-width: 1610px;
+  padding: 0 15px;
+  margin: 0 auto 160px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.feature-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 176px;
+  gap: 0 126px;
+}
+.feature-content {
+  text-align: start;
+}
+.feature-content-heading {
+  line-height: 1.5;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+}
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 51px;
+}
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0 42px;
+  margin-bottom: 40px;
+}
+.feature-icon {
+  background: #FBFBFB;
+  border-radius: 100rem;
+  box-shadow: 0px 15px 44px rgba(13, 15, 28, 0.12);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-desc {
+  flex: 1;
+  font-size: 22px;
+  color: #696984;
+  line-height: 1.8;
+}
+
 h1 {
   color: #2f327d;
   font-size: 100px;
   text-decoration: dashed;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../src/scss/_reset.scss%22,%22../../src/scss/_global.scss%22,%22../../src/scss/_variable.scss%22,%22../../src/scss/_header.scss%22,%22../../src/scss/app.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAA;EACI;;;AAEF;EACE;EACA;;;AAEF;AAAA;AAAA;EAGE;;;AAEF;AAAA;AAAA;AAAA;EAIE;;;AAEF;EACE;;;AAEF;AAAA;EAEE;;;AAEF;EACE;;;AAEF;EACE;EACA;;;AC9BJ;EACI;EACA,OCIU;EDHV;EACA;EACA,aCKW;;;ADFf;EACI;EACA;EACA;EACA;EACA,aCHW;EDIX;EACA;EACA;EACA;EACA;;AAGA;EACI;EACA,OCnBK;;ADqBT;EACI,kBCzBU;ED0BV;;;AE3BR;EACI;EACA,kBDMK;ECLL;;AACA;EACI;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;EACA;;AAMJ;EACI,ODhCU;ECiCV;EACA;EACA;EACA;;AAEA;EACI,ODxCI;;AC2CZ;EACI;EACA,ODxCI;ECyCJ;EACA;EACA;;;AAKR;EACI;EACA;EACA;EACA;EACA;;AACA;EACI;;;ACxDR;EACI,OFLY;EEMZ;EACA%22,%22file%22:%22app.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../src/scss/_reset.scss%22,%22../../src/scss/_global.scss%22,%22../../src/scss/_variable.scss%22,%22../../src/scss/_header.scss%22,%22../../src/scss/_company.scss%22,%22../../src/scss/_introduce.scss%22,%22../../src/scss/_about.scss%22,%22../../src/scss/_youcan.scss%22,%22../../src/scss/_feature.scss%22,%22../../src/scss/app.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAA;EACI;;;AAEF;EACE;EACA;;;AAEF;AAAA;AAAA;EAGE;;;AAEF;AAAA;AAAA;AAAA;EAIE;;;AAEF;EACE;;;AAEF;AAAA;EAEE;;;AAEF;EACE;;;AAEF;EACE;EACA;;;AC9BJ;EACI;EACA,OCIU;EDHV;EACA;EACA,aCKW;;;ADFf;EACI;EACA;EACA;EACA;EACA,aCHW;EDIX;EACA;EACA;EACA;EACA;;AAGA;EACI;EACA,OCnBK;;ADqBT;EACI,kBCzBU;ED0BV;;;AAMJ;EACI,OClCQ;EDmCR;EACA;EACA;EACA;;AACA;EACI,OCvCM;;AD2Cd;EACI,OC1CD;ED2CC;EACA;;;AAIR;EACI,YC7CK;;;AD+CT;EACI,YCtDc;;;ADwDlB;EACI,YCjDG;;;ACTP;EACI,kBDOK;ECNL;EACA;EACA;EACA;;AACA;EACI;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;EACA;;AAGJ;EACI;;AAGJ;EACI;EACA;;AAEJ;EACI,ODvCU;ECwCV;EACA;EACA;EACA;;AAEA;EACI,OD/CI;;ACkDZ;EACI;EACA,OD/CI;ECgDJ;EACA;EACA;;AAGJ;EACI;EACA;EACA;;AACA;EACI;;;AAMZ;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAKR;EACI;EACA;EACA;EACA;EACA;;AACA;EACI;;;ACjGR;EACI;EACA,aFQW;EEPX;;AAEA;EACI;EACA;EACA;EACA,OFND;EEOC;EACA;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;;;ACzBR;EACI;EACA;EACA;EACA;EACA;;AACA;EACI;EACA;EACA;EACA;EACA;;AAEJ;EACI;;AAEJ;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEJ;EACI,OH/CQ;EGgDR;EACA;EACA;EACA;EACA;;AAEJ;EACI,OHpDD;EGqDC;EACA;EACA;;;AC1DR;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;;AAEJ;EACI;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;;AAEJ;EACI;EACA;EACA;;AAEJ;EACI;EACA;EACA;;;ACrDR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;;AAGJ;EACI;;AACA;EACI;EACA;EACA;EACA,kBLlBM;;AKoBN;EACI;EACA;EACA;;AAEJ;EACI;EACA;EACA;EACA;EACA;;AAKZ;EACI;EACA;EACA;EACA,aL7BS;;AKiCb;EACI;EACA;;AAEJ;EACI;EACA,OL/CD;EKgDC;;AAEJ;EACI;;AACA;EACI;;AAGR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;;AACA;EACI;EACA;EACA,kBLxEL;EKyEK;;AAEJ;EACI;EACA;EACA;EACA;EACA,kBLxFM;EKyFN;;;AC1FZ;EACI;EACA;EACA;EACA;EACA,aNKW;;AMJX;EACI;EACA;EACA;EACA;EACA;;AAGJ;EACI;;AACA;EACI;EACA,aNPK;EMQL;;AAIR;EACI;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA,ON/CD;EMgDC;;;AC1CR;EACI,OPVY;EOWZ;EACA%22,%22file%22:%22app.css%22%7D */

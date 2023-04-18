@@ -1,0 +1,56 @@
+.about {
+    max-width: 1330px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 160px;
+
+    &-header {
+        max-width: 1130px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    &-list {
+        display: flex;
+        align-items: center;
+        gap: 0 100px;
+    }
+    &-item {
+        border-radius: 20px;
+        position: relative;
+    }
+
+    &-content {
+        position: absolute;
+        inset: 0;
+        background: rgba(23, 27, 65, 0.5);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &-title {
+        font-weight: 600px;
+        line-height: calc(48 / 32);
+        font-size: 32px;
+        color: white;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+    .btn--outline {
+        padding: 24px 38px;
+        border: 1px solid currentColor;
+        color: white;
+    }
+    .btn--student {
+        padding: 24px 38px;
+        background-color: rgba(35, 189, 238, 0.9);
+        color: white;
+    }
+}

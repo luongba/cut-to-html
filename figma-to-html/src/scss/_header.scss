@@ -1,7 +1,9 @@
 .header {
-    min-height: 1118px;
     background-color: $yellow;
-    border-radius: 0 0 200px 200px;
+    clip-path: ellipse(100% 100% at top);
+    margin-bottom: 100px;
+    overflow: hidden;
+    min-height: 1118px;
     &-container {
         max-width: 1725px; // tính toán cộng thêm 2 bên 15px để chừa cho padding
         margin-left: auto;
@@ -28,7 +30,12 @@
     }
 
     &-content {
+        position: relative;
+    }
 
+    &-image {
+        position: relative;
+        transform: translateY(24px);
     }
     &-heading {
         color: $secondary-color;
@@ -47,6 +54,36 @@
         font-weight: 400;
         line-height: calc(38.4 / 24);
         margin-bottom: 52px;
+    }
+
+    &-actions {
+        display: flex;
+        align-items: center;
+        gap: 0 40px;
+        .btn--primary {
+            padding: 22px 38px;
+        }
+    }
+
+}
+
+.watch {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    gap: 0 32px;
+    line-height: calc(36 / 24);
+    color: inherit;
+
+    &-icon {
+        background-color: white;
+        width: 80px;
+        height: 80px;
+        box-shadow: 2px 20px 60px rgba(61,155,185,0.1);
+        border-radius: 100rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }

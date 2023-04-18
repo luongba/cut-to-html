@@ -1,0 +1,94 @@
+.youcan {
+    max-width: 1577px;
+    padding: 0 15px;
+    margin: 0 auto 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 67px;
+
+    & > *{
+        width: 50%;
+    }
+
+    &-content {
+        position: relative;
+        &-decoration {
+            border-radius: 100rem;
+            position: absolute;
+            z-index: -1;
+            background-color: $secondary-color;
+
+            &.rounder-big {
+                width: 73px;
+                height: 73px;
+                transform: translate(-25px, -13px);
+            }
+            &.rounder-small {
+                width: 30px;
+                height: 30px;
+                top: 50%;
+                right: 0%;
+                transform: translateY(50%);
+            }
+        }
+    }
+
+    &-heading {
+        font-size: 36px;
+        line-height: calc(57.6 / 36);
+        font-weight: 600;
+        font-family: $font-secondary;
+       
+    }
+
+    &-desc {
+        margin: 30px 0;
+        letter-spacing: .02rem;
+    }
+    &-link {
+        text-decoration-line: underline;
+        color: $gray;
+        line-height: calc(39.6 / 22);
+    }
+    &-image {
+        position: relative;
+        & > img {
+            width: 100%;
+        }
+    }
+    &-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100rem;
+        cursor: pointer;
+    }
+
+    &-decoration {
+        border-radius: 20px;
+        position: absolute;
+        z-index: -1;
+        &.blue {
+            width: 138px;
+            height: 138px;
+            background-color: $blue;
+            transform: translate(-20px, -20px);
+        }
+        &.secondary {
+            width: 231px;
+            height: 231px;
+            right: 0;
+            bottom: 0;
+            background-color: $secondary-color;
+            transform: translate(20px, 20px);
+        }
+    }
+}
